@@ -13,3 +13,15 @@ require "rgraphicview"
 
 require "irb"
 IRB.start(__FILE__)
+
+if ARGV.length < 2
+  puts "Usage: my_gem_name title stylesheet [output_dir]"
+  exit 1
+end
+
+title = ARGV[0]
+stylesheet = ARGV[1]
+output_dir = ARGV[2] || 'output'
+
+generator = MyGemName::HtmlGenerator.new(title, stylesheet)
+generator.generate(output_dir)

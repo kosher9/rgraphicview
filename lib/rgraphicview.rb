@@ -62,3 +62,5 @@ module Rgraphicview
     end
   end
 end
+# I would like to write a ruby gem and once installed we could run some scripts from our gem inside a ruby on rails project.
+
