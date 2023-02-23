@@ -3,5 +3,6 @@
 module Rgraphicview
   require 'rgraphicview/railtie' if defined?(Rails)
 end
-# I would like to write a ruby gem and once installed we could run some scripts from our gem inside a ruby on rails project.
-
+# The task should create rgraphicview_index.html and rgraphicview_style.css files locally.
+# Create a task that will inspect the rails project
+# generate a json file within the gem and work on that json file.

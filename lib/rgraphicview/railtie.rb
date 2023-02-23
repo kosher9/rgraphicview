@@ -10,7 +10,7 @@ module Rgraphicview
 
     rake_tasks do
       path = File.dirname(__dir__)
-      Dir.glob("#{path}/rgraphicview/tasks/*.rake").each { |f| load f }
+      Dir.glob(%W[#{path}/rgraphicview/tasks/*.rake #{path}/rgraphicview/tasks/rgraphicview/*.rake]).each { |f| load f }
     end
   end
 end
